@@ -1,0 +1,23 @@
+[project]
+name = "mcp-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muteeb Nasir", email = "muteebnasir9@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain[mcp]>=1.4",
+    "langchain-anthropic>=1.7.7",
+    "python-dotenv>=1.2.4",
+    "fastmcp>=2.12",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+mcp-app = "mcp_app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
